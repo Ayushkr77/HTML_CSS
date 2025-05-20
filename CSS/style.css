@@ -1,16 +1,20 @@
+/* Hue: This represents the pure color, like red, green, or blue. It's typically described as a degree on the color wheel, ranging from 0 to 360. 
+Saturation: This determines the intensity of the color or the amount of gray in it. A saturation of 0% results in a shade of gray, while 100% represents the full, vibrant color. 
+Lightness: This defines how bright or dark the color is, or the amount of white in it. A lightness of 0% is black, while 100% is white.  */
+/* Also explore  hsla(hue, saturation, lightness, alpha */
+
 h1{
-    color: black;
+    background-color: hsl(0, 72%, 75%);
 }
 #p1{
-    color:red;
+    color: tomato;
 }
 #p2{
-    color:orange;
+    color: rgb(102, 222, 255)
 }
 #p3{
-    color:yellow;
+    color: #59ff5f;
 }
 #p4{
-    color:green;
+    color: hsl(283, 100%, 64%);
 }
-
