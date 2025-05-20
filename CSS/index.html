@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- For external css -->
+     <link rel="stylesheet" href="style.css">
+
+
+    <!-- For internal css -->
+    <!-- <style>
+        h1{
+            color: blue;
+        }
+        p {
+            color: red;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- Inline, internal and external -->
+
+    
+
+    <!-- inline styles have the highest priority, followed by internal (embedded) and external stylesheets -->
+
+
+
+    <!-- apparently, id tags are prioritized over class tags. so if u have:
+    .even{
+        color: red;
+    }
+    #p2{
+        color: blue;
+    }
+    the result will be blue, regardless whether #p2 is put top or bottom of the .even -->
+
+
+
+
+
+    <!-- Inline -->
+    <h1 style="background-color: aqua;">This is my website</h1>
+    <p style="background-color: beige;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+    <p style="background-color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+    <p style="background-color: blueviolet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+    <p style="background-color: cyan;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+
+
+    <!-- Internal -->
+    <h1>This is my website</h1>
+    <p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+
+
+    <!-- External -->
+    <h1>This is my website</h1>
+    <p id="p1" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+    <p id="p2" class="even">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+    <p id="p3" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+    <p id="p4" class="even">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis! Necessitatibus dolorum asperiores facere exercitationem nostrum.</p>
+
+</body>
+</html>
