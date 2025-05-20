@@ -1,0 +1,82 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- for and id
+        These two work together to link a <label> to an input field, improving usability and accessibility.
+        id is a unique identifier for an input element.
+        for in a <label> matches the id of the corresponding input.
+        Benefit: Clicking the label focuses or activates the input. 
+        for is used only in the <label> tag. It associates the label with a specific form control (<input>, <select>, <textarea>, etc.) by referencing its id.-->
+    <!-- method in <form>
+        Specifies how the form data is sent to the server.
+        GET:
+            Data is appended to the URL (e.g., index.php?username=value).
+            Good for search, non-sensitive data.
+            Can be bookmarked.
+            Limited data size.
+        POST:
+            Data is sent in the request body, not visible in the URL.
+            Used for login, file upload, payment, registration.
+            More secure and supports larger amounts of data. -->
+    <!-- enctype in <form>
+        enctype = Encoding Type
+        It tells the browser how to encode the form data when submitting to the server. -->
+
+    <form action="index.php" method="POST" enctype="multipart/form-data">   <!-- multipart/form-data allows that by: Dividing the request into multiple parts (text fields and file data). Packaging each part with headers, so the server knows what's what.-->
+
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="Spongebob" minlength="6"  maxlength="15" required><br>
+
+        <label for="password">password:</label>
+        <input type="password" id="password"><br>
+
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="SSquarepants@gmail.com"><br>
+
+        <label for="phone">phone:</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+        <label for="bday">birthdate:</label>
+        <input type="date" id="bday"><br>
+
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+        <label for="title">title:</label>
+        
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="PhD.">PhD.</label>
+        <input type="radio" id="PhD." value="PhD." name="title"><br>
+
+        <label for="payment">payment</label>
+        <select id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select><br>
+
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe"><br>
+
+        <label for="comment">comment:</label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+        <label for="file">file:</label>
+        <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+        <input type="reset"><br>
+        <input type="submit">
+
+    </form>
+
+</body>
+</html>
+
